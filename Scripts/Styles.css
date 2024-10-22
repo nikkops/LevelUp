@@ -1,0 +1,984 @@
+/*Reset*/
+html, body , footer, img, div{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+img, video{display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;  
+    padding: 0;}
+
+
+/* Style rule for all elements*/
+* {box-sizing: border-box;}
+
+a{
+    text-decoration: none;
+}
+/*
+===================================================================================================
+*/
+/*CSS styles for desktop viewport*/
+
+header {
+    position: static;
+    background-color: #166088;
+    width: 100%;
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;
+    padding: 0.5rem 1rem;      
+}
+
+header img {
+    margin: 0;                 
+    max-height: 80px;          
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+}
+
+
+/*CSS styles for nav*/
+nav{
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;     
+    margin: 0;
+    padding: 0;
+    display: flex;             
+}
+
+nav ul li {
+    margin-left: 35px;         
+}
+
+nav ul li a {
+    text-decoration: none;    
+    color: white;
+    font-size: 1.5em;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 800;          
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none; 
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/*CSS styles for hero*/
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero h1, .hero h3 {
+    position: absolute;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    font-size: 2.25rem;
+}
+
+.hero h3 {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 4.75rem;
+    max-width: 70%;
+    font-size: 1.15rem;
+    line-height: 1.2;
+}
+
+/*CSS styles for body*/
+body {
+    background: linear-gradient(180deg, #B3D4E1 0%, #DBE9EE 100%);
+}
+
+.banner {
+    background-color: #4F6D7A;
+    color: #fff;
+    padding: 0.005rem;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.banner h2{
+    margin-left: 1%;
+}
+
+.headingtext{
+    color:#4F6D7A;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.headingtext h2{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.7em;
+}
+
+.headingtext h4{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+.grid{
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #4F6D7A;
+    
+}
+
+.grid4{
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: #4F6D7A;
+}
+
+/*CSS styles for frame*/
+
+.frame {
+    background-color: #B8CFD8; 
+    border-radius: 15px;       
+    overflow: hidden;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px;              
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.frame .frame-image img {
+    width: 100%;              
+    height: 250px;             
+    overflow: hidden;              
+    object-fit: cover;          
+}
+
+.frame .pic-text {
+    font-weight: 550;
+    font-size: 1.35em;
+    margin-top: 10px;        
+    padding: 10px; 
+    padding-top: 5px;    
+}
+
+.frame p {
+    font-weight: 200;
+    font-size: 1.15em;
+    margin-top: 1.5px;
+    padding: 10px;
+    padding-top: 5px;    
+    line-height: 2em;
+}
+
+.frame a {
+    color: #4F6D7A;
+}
+
+.frame a:hover{
+    text-decoration: underline;
+}
+
+/*CSS styles for frames home*/
+.frameh {
+    background-color: #B8CFD8; 
+    border-radius: 15px;       
+    overflow: hidden;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px;              
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.frameh .frame-image img {
+    width: 100%;              
+    height: 250px;             
+    overflow: hidden;              
+    object-fit: cover;          
+}
+
+.frameh .pic-text {
+    font-weight: 550;
+    font-size: 1.35em;
+    margin-top: 10px;        
+    padding: 10px; 
+    padding-top: 5px;    
+}
+
+.frameh p {
+    font-weight: 200;
+    font-size: 1.15em;
+    margin-top: 1.5px;
+    padding: 10px;
+    padding-top: 5px;    
+    line-height: 2em;
+}
+
+.frameh a {
+    color: #4F6D7A;
+}
+
+.frameh a:hover{
+    text-decoration: underline;
+}
+
+/*CSS styles for horizontal frames*/
+.segment-container {
+    display: flex;               
+    flex-wrap: wrap;            
+    justify-content: space-between; 
+    margin: 1em;       
+    flex-direction: column;      
+    gap: 1em;            
+}
+
+.frame-horizontal {
+    background-color: #B8CFD8; 
+    border-radius: 15px;       
+    overflow: hidden;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;              
+    padding: 1em;               
+    align-items: center;
+    margin: 0 auto 20px;
+    width: 90%;
+}
+
+.frame-horizontal:nth-child(odd) {
+    flex-direction: row;        
+    justify-content: flex-start; 
+}
+
+.frame-horizontal:nth-child(even) {
+    flex-direction: row-reverse; 
+    justify-content: flex-end; 
+    
+}
+
+.frame-horizontal:nth-child(even) img{
+    margin-right: 5%;
+}
+
+.frame-horizontal:nth-child(odd) img{
+    margin-left: 5%;
+}
+
+.frame-horizontal img {
+    border-radius: 15px;       
+    width: 40%;                 
+    max-width: 400px;         
+    height: auto;               
+    object-fit: cover;          
+}
+
+.frame-horizontal h2, .frame-horizontal p {
+    margin: 0;                
+    width: 95%;              
+    color: #4F6D7A;
+    display: flex;             
+    flex-direction: column;    
+    justify-content: center;   
+}
+
+.frame-horizontal h2 {
+    font-family: "Oswald";
+}
+
+.frame-horizontal p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 180%;
+    font-size: 1.1em;
+}
+
+.frame-horizontal:nth-child(odd) h2,
+.frame-horizontal:nth-child(odd) p {
+    margin-left: 5%; 
+}
+
+.segmentlink {
+    color: #4F6D7A; 
+    text-decoration: none; 
+}
+
+.segmentlink:hover {
+    text-decoration: underline;
+}
+
+
+.segmentlink:visited {
+    color: #4F6D7A;
+}
+/*CSS styles for form*/
+.newsletter-section {
+    background-color: #B3D4E1;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.newshead {
+    background-color: #4F6D7A;
+    text-align: center;
+    padding: 2.5px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    font-size: 1.1em;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px 0; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center; 
+    width: 80%; 
+    margin-bottom: 10px; 
+    font-weight: 700;
+}
+
+label {
+    font-size: 1.25em;
+}
+
+.newsletter-form label {
+    margin-right: 10px; 
+    flex: 0 0 20%; 
+}
+
+.newsletter-form input {
+    padding: 10px;
+    flex: 1; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.form-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    min-width: 150px;
+    max-width:250px
+}
+
+.confirm-button {
+    background-color: #A4D89D;
+}
+
+.reset-button {
+    background-color: #E29898;
+}
+
+.confirm-button:hover{
+    background-color: #8CCB7F;
+}
+
+.reset-button:hover {
+    background-color: #d17979
+}
+/*CSS styles for table*/
+table{
+    border: none;
+    border-radius: 20px;
+    border-spacing: 0;
+    margin: 20px auto 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2%;
+    background-color: #B8CFD8;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+th {
+    background-color: #166088;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+td{
+    color: #166088;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+
+/*CSS styles to remove outline of table*/
+    table tr:first-child th:first-child, 
+    table tr:first-child td:first-child, 
+    table tr td:first-child {               
+        border-left: none;
+    }
+
+    table tr:first-child th {            
+        border-top: none; 
+    }
+
+    table tr:first-child td {              
+        border-top: none; 
+    }
+
+    table tr:last-child td {
+        border-bottom: none; 
+    }
+
+    table tr td:last-child {
+        border-right: none; 
+    }
+
+
+
+/*CSS styles for contact setup*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: #4F6D7A;
+    padding-bottom: 9em;
+}
+
+.contact a {
+    color: #4F6D7A;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.left-side{
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.abt, .contact {
+    margin-bottom: 20px;
+    font-size: 1.25em;
+}
+
+.quote {
+    width: 30%;
+    margin-right: 2.5em;
+    align-self: center;
+    font-style: italic;
+}
+
+.quote h3{
+    line-height: 2em;
+    font-size: 1.75em;
+}
+
+.quote p{
+    font-size: 1.25em;
+}
+
+/*CSS styles for footer*/
+footer {
+    background-color: #4F6D7A; 
+    color: white;             
+    text-align: left;       
+    padding: 1rem;           
+    position: static;       
+    bottom: 0;               
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 0;
+    margin-bottom: 0;
+}             
+
+.copyright {
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials img{
+    min-height: 35px;
+}
+
+.socials p {
+    margin-right: 10px;
+}
+
+.socials a {
+    margin-left: 10px;
+}
+
+
+/*
+===================================================================================================
+*/
+/* Styles for tablet viewports (600px to 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Adjust layout and font sizes */
+    body {
+        font-size: 1em; 
+    }
+
+    /*CSS styles for heading tablet*/
+    header {
+        display: flex;               
+        justify-content: space-between; 
+        align-items: center;         
+        flex-wrap: nowrap;           
+    }
+
+    header img {
+        max-width: 120px;            
+        height: auto;                
+        margin: 0;                  
+    }
+
+    nav {
+        flex-grow: 1;               
+        text-align: right; 
+        display: block;      
+    }
+
+    nav ul {
+        justify-content: flex-end;   
+        flex-wrap: nowrap;          
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 20px;          
+        font-size: 1.25em;           
+    }
+
+    nav ul li a {
+        font-size: 1em;            
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    /*CSS for hero*/
+    .hero {
+        height: 32.5vh; 
+    }
+
+    .hero h1 {
+        font-size: 1.75rem; 
+        margin-bottom: 5rem;
+    }
+
+    .hero h3 {
+        font-size: 1rem;
+        margin-top: 3rem; 
+    }
+
+    /*CSS styles for grid tablet for home*/
+    .grid-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    
+    .grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        max-width: 100%;
+
+    }
+
+    .frameh {
+        flex: 0 0 45%;
+        margin-right: 20px;
+    }
+    
+
+    .scroll-right-btn, .scroll-left-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(79, 109, 122, 0.8); 
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px
+    }
+
+    .scroll-right-btn {
+        right: 10px;
+    }
+
+    .scroll-left-btn {
+        left: 10px;
+    }
+
+    .grid::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /*CSS styles for grid tablet*/
+    .grid-container {
+        display: flex;            
+        align-items: center;    
+        overflow: hidden;        
+        width: 100%;            
+        position: relative;      
+        padding: 0 10px;         
+    }
+
+    .grid4 {
+        display: flex;           
+        transition: transform 0.3s ease;
+        overflow-x: auto;      
+        scroll-behavior: smooth; 
+        max-width: 100%; 
+        padding-right: 10px;    
+        
+        -ms-overflow-style: none;  
+        scrollbar-width: none;      
+    }
+    
+    .grid4::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .frame {
+        flex: 0 0 auto;         
+        width: 300px;          
+        margin-right: 20px;    
+    }
+
+    .scroll-button {
+        background-color: rgba(79, 109, 122, 0.8); 
+        border: none;              
+        border-radius: 5px;       
+        padding: 10px;          
+        cursor: pointer;         
+        position: absolute;   
+        top: 50%;               
+        transform: translateY(-50%);
+        z-index: 1;            
+    }
+
+    .scroll-left-btn {
+        left: 10px;            
+    }
+
+    .scroll-right-btn {
+        right: 10px;             
+    }
+
+    .newsletter-section{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 734px), (min-width: 1025px) {
+    .scroll-right-btn {
+        display: none;
+    }
+    .scroll-left-btn {
+        display: none;
+    }
+}
+
+
+/*
+===================================================================================================
+*/
+/* Styles for mobile viewports */
+@media screen and (max-width: 768px) {
+    /* Adjust general layout and font sizes */
+    body {
+        font-size: 0.9em; 
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    header img {
+        max-width: 80px; 
+        height: auto;
+    }
+
+
+    /*CSS styles for nav*/
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    nav ul li {
+        margin: 0; 
+    }
+
+    nav ul li a {
+        font-size: 1.2em; 
+    }
+
+
+    /* Hero section */
+    .hero {
+        height: 30vh; 
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; 
+        margin-bottom: 5rem;
+    }
+
+    .hero h3 {
+        font-size: .75rem;
+        margin-top: 2rem;
+    }
+
+    /* Grid layout for tutorials */
+    .grid, .grid4 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .frame {
+        width: 95%; 
+    }
+
+
+    /*CSS styles for horizontal frames*/
+    .segment-container {
+        display: flex;
+        flex-direction: column; 
+        margin: 0; 
+        padding: 1em; 
+    }
+
+    .frame-horizontal {
+        width: 100%; 
+        margin: 1em 0; 
+        padding: 1em; 
+        display: flex; 
+        flex-direction: column; 
+        
+        overflow: hidden; 
+        text-align: center; 
+    }
+
+    .frame-horizontal img {
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto; 
+        border-radius: 15px; 
+        object-fit: cover; 
+    }
+
+    .frame-horizontal:nth-child(odd) img{
+        margin-left: 0%;
+    }
+
+    .frame-horizontal h2, 
+    .frame-horizontal p {
+        width: 100%; 
+        margin: 0.5em 0; 
+        text-align: center; 
+    }
+
+    .frame-horizontal h2 {
+        font-size: 1.5em; 
+    }
+
+    .frame-horizontal p {
+        font-size: 1em; 
+    }
+
+    .frame-horizontal:nth-child(odd), .frame-horizontal:nth-child(even) {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+
+    .frame-horizontal:nth-child(odd) h2,
+    .frame-horizontal:nth-child(odd) p {
+    margin-left: 0%; 
+    }
+
+    /* Newsletter section */
+    .newsletter-section {
+        width: 80%; 
+    }
+
+    .form-buttons button {
+        font-size: 1em;
+        padding: 10px;
+        min-width: 120px; 
+    }
+
+    /* Table hide */
+    table {
+        display: none;
+    }
+
+    /*Abour Us Page*/
+    .quote {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        padding: 1em; 
+    }
+
+    .left-side {
+        width: 90%;
+    }
+
+    .abt p, .contact p{
+        line-height: 1.5;
+    }
+    
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        margin-top: 10px;
+    }
+}
+
+/*
+===================================================================================================
+*/
+/*Styles for printing*/
+@media print {
+    html, body, footer, img, div {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    body {
+        background: none; 
+        color: black; 
+        font-size: 12pt; 
+    }
+
+    header, nav, .menu-icon, .banner, .hero, .newsletter-section, .footer {
+        display: none !important;
+    }
+
+    table {
+        border-collapse: collapse; 
+        width: 100%; 
+    }
+
+    th, td {
+        border: 1px solid black; 
+        padding: 8px; 
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    h1, h2, h3, h4, p {
+        margin: 0; 
+        padding: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline; 
+    }
+
+    .frame, .frameh, .frame-horizontal {
+        box-shadow: none; 
+        margin: 0;
+        border: 1px solid #B8CFD8; 
+        padding: 10px;
+    }
+
+    .grid, .grid4, .segment-container {
+        display: block; 
+    }
+
+    .contact {
+        display: block;
+    }
+}
